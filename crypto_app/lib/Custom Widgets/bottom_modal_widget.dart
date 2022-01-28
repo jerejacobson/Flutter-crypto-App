@@ -63,7 +63,7 @@ Widget buildDetailModal(CoinGeckoResult<Coin?> coin, Market singledata) {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Text(
-              "\$ " + singledata.currentPrice!.toStringAsFixed(2),
+              "Price: \$ " + singledata.currentPrice!.toStringAsFixed(2),
               style: GoogleFonts.oxygen(
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
@@ -101,7 +101,7 @@ Widget buildDetailModal(CoinGeckoResult<Coin?> coin, Market singledata) {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Market Cap: ",
+                  "Circulating Supply: ",
                   style: GoogleFonts.oxygen(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -125,7 +125,7 @@ Widget buildDetailModal(CoinGeckoResult<Coin?> coin, Market singledata) {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Total Supply: ",
+                  "Total Volume: ",
                   style: GoogleFonts.oxygen(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,

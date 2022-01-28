@@ -71,7 +71,7 @@ class ListViewBuilder extends StatelessWidget {
                                       alignment: Alignment.centerLeft,
                                       decoration: BoxDecoration(
                                           image: DecorationImage(
-                                              image: fetchFavicon(
+                                              image: fetchImage(
                                                   singleData.image!)))),
                                   Text(
                                     singleData.symbol,
@@ -87,8 +87,6 @@ class ListViewBuilder extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                               child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
@@ -183,7 +181,7 @@ Widget buildSparkline(List<double> data, double changePercent) {
   );
 }
 
-ImageProvider fetchFavicon(String imgUrl) {
+ImageProvider fetchImage(String imgUrl) {
   ImageProvider tempImage;
   tempImage = NetworkImage(imgUrl);
   return tempImage;
