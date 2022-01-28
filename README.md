@@ -20,5 +20,5 @@
 
 ![](/ReadMeAssets/LoginScreenshot.png)
 
-![](/ReadMeAssets/ListScreenShot.png)
+![](/ReadMeAssets/ListScreenshot.png)
 
