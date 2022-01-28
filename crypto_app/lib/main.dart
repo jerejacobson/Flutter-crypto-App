@@ -19,6 +19,6 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         onGenerateRoute: route.controller,
-        initialRoute: route.loginPage);
+        initialRoute: route.homePage);
   }
 }
